@@ -1,20 +1,10 @@
-import { NavLink } from "react-router-dom";
+import { NavBlock, NavLink } from "./Navigation.styled";
 
-const navigation = [
-  { name: "HOME", route: "/" },
-  { name: "TWEETS", route: "tweets" },
-];
-
-const Navigation = () => {
+export const Navigation = () => {
   return (
-    <nav className="flex gap-12 ">
-      {navigation.map((link) => (
-        <NavLink key={link.name} to={link.route}>
-          {link.name}
-        </NavLink>
-      ))}
-    </nav>
+    <NavBlock>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/tweets">Tweets</NavLink>
+    </NavBlock>
   );
 };
-
-export default Navigation;

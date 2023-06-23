@@ -48,6 +48,11 @@ const TweetCard = ({ item }) => {
     }
     setIsFollowing(!isFollowing);
   };
+
+  const formatNumber = (number) => {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  };
+
   return (
     <Wrapper>
       <LogoImage srcSet={`${Logo} 1x, ${Logo2x} 2x`} src={Logo2x} alt="logo" />
@@ -61,7 +66,7 @@ const TweetCard = ({ item }) => {
         <AvatarImage src={avatar} alt="avatar" />
       </AvatarWrapper>
       <Tweets>{tweets} tweets</Tweets>
-      <Followers>{followers} followers</Followers>
+      <Followers>{formatNumber(followers)} followers</Followers>
       <Button isFollowing={isFollowing} onClick={handleFollowClick}>
         {isFollowing ? "Following" : "Follow"}
       </Button>

@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
-import Navigation from "./Navigation";
+import AppBar from "../AppBar";
 
 const Layout = () => {
   return (
     <div>
-      <header className="flex justify-between items-center">
-        <Navigation />
+      <header>
+        <AppBar />
       </header>
       <main>
         <Outlet />

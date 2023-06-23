@@ -47,38 +47,23 @@ export const Rectangle = styled.div`
     inset 0px -1.71846px 3.43693px #ae7be3, inset 0px 3.43693px 2.5777px #fbf8ff;
 `;
 
-// export const AvatarImage = styled.img`
-//   position: absolute;
-//   width: 80px;
-//   height: 80px;
-//   left: 150px;
-//   top: 178px;
-//   object-fit: cover;
-
-//   border-radius: 85.9232px;
-//   border: 8px solid #ebd8ff;
-// `;
-
 export const AvatarWrapper = styled.div`
   position: absolute;
-  width: 80px;
-  height: 80px;
   left: 150px;
   top: 178px;
-  box-sizing: content-box;
-  border-radius: 85.9232px;
-  background-color: #ebd8ff;
+  width: 80px;
+  height: 80px;
+  border: 8px solid #ebd8ff;
+  border-radius: 50%;
   overflow: hidden;
+  z-index: 10;
+  box-sizing: border-box;
 `;
 
 export const AvatarImage = styled.img`
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 100%;
 `;
 
 export const Tweets = styled.p`
