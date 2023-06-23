@@ -199,4 +199,4 @@ and limitations under the License.
   gap: 30px;
   margin-top: 20px;
   justify-content: center;
-`,Mw=()=>{const[e,t]=_.useState([]);return _.useEffect(()=>{(async()=>{try{const r=await p1.fetchTweets();t(r)}catch(r){console.error(r)}})()},[]),me.jsx(zw,{children:e.map(n=>me.jsx(Lw,{item:n},n.id))})};function Fw(){return me.jsx(me.Fragment,{children:me.jsx(Gy,{children:me.jsx(zu,{path:"",children:me.jsx(zu,{path:"tweets",element:me.jsx(Mw,{})})})})})}Bs.createRoot(document.getElementById("root")).render(me.jsx(zt.StrictMode,{children:me.jsx(Xy,{basename:"tweet_card",children:me.jsx(Fw,{})})}));
+`,Mw=()=>{const[e,t]=_.useState([]);return _.useEffect(()=>{(async()=>{try{const r=await p1.fetchTweets();t(r)}catch(r){console.error(r)}})()},[]),me.jsx(zw,{children:e.map(n=>me.jsx(Lw,{item:n},n.id))})};function Fw(){return me.jsx(me.Fragment,{children:me.jsx(Gy,{children:me.jsx(zu,{path:"",children:me.jsx(zu,{path:"tweets",element:me.jsx(Mw,{})})})})})}Bs.createRoot(document.getElementById("root")).render(me.jsx(zt.StrictMode,{children:me.jsx(Xy,{basename:"/tweet_card",children:me.jsx(Fw,{})})}));
