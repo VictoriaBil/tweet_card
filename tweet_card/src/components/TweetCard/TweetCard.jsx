@@ -10,10 +10,10 @@ import {
   Followers,
   Button,
 } from "./TweetCard.styled";
-import Logo from "../../assets/images/Logo.png";
-import Logo2x from "../../assets/images/Logo@2x.png";
-import Signs from "../../assets/images/signs.png";
-import Signs2x from "../../assets/images/signs@2x.png";
+import Logo from "@/assets/images/Logo.png";
+import Logo2x from "@/assets/images/Logo@2x.png";
+import Signs from "@/assets/images/signs.png";
+import Signs2x from "@/assets/images/signs@2x.png";
 
 const TweetCard = ({ item }) => {
   const [tweets, setTweets] = useState(

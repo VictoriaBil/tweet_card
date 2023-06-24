@@ -1,4 +1,4 @@
-import HomeImage from "../../assets/images/Home.jpg";
+import HomeImage from "@/assets/images/Home.jpg";
 import { Container, Img } from "./Home.styled";
 
 const Home = () => {

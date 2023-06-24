@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { API } from "../../redux/users/operations";
-import TweetCard from "../../components/TweetCard/TweetCard";
+import { API } from "@/redux/users/operations";
+import TweetCard from "@/components/TweetCard/TweetCard";
 
 import {
   Container,
