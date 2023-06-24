@@ -1,11 +1,21 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+const media = {
+  desktop: "@media screen and (min-width: 1200px)",
+  tablet: "@media screen and (min-width: 768px)",
+  mobile: "@media screen and (max-width: 767px)",
+};
+
 export const NavBlock = styled.nav`
   display: flex;
   gap: 100px;
   justify-content: center;
   align-items: center;
+
+  ${media.mobile} {
+    gap: 40px;
+  }
 `;
 
 export const NavLink = styled(Link)`
@@ -25,5 +35,13 @@ export const NavLink = styled(Link)`
   &:focus {
     color: #3e2d85;
     border: 2px solid #3e2d85;
+  }
+
+  ${media.mobile} {
+    width: 55px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
   }
 `;
