@@ -10,8 +10,8 @@ const media = {
 export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  // align-items: center;
+  // justify-content: center;
   padding-left: 20px;
   padding-right: 20px;
 `;
@@ -33,8 +33,13 @@ export const BtnWrapper = styled.div`
 `;
 
 export const BackBtn = styled.div`
-  align-self: flex-start;
-  margin-left: 40px;
+  // align-self: flex-start;
+  // margin-left: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
 
   ${media.mobile} {
     display: flex;
